@@ -12,7 +12,6 @@ function FeedbackForm() {
     const [message, setMessage] = useState("")
 
     const {addFeedback, feedbackEdit, updateFeedback} = useContext(FeedbackContext)
-    const data = useContext(FeedbackContext)
 
     useEffect(() => {
         if(feedbackEdit.edit === true) {
